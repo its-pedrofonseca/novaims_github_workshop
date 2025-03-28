@@ -1,0 +1,161 @@
+# Adding and removing files 📁
+
+Git enables you to choose specifically which files you want to add or remove from your next snapshot. This section provides you a thorough guide on how to select or unselect files for staging. 
+
+## Understanding Staging Area 🎭
+
+Before diving into adding and removing files, we need to understand the concept of the **staging area**. It is the place where Git holds the changes pending commit —commits are the snapshots, as we will see in the next section. Files in the staging area are not yet recorded in the version history but are poised to be included in the next snapshot. 
+
+## `git add` : Adding Files to the Staging Area 
+
+So, how do we populate the staging area? The basic command that does this is the `git add` command. Use it to add new or modified files to the staging area, marking them for inclusion in your next commit.
+
+There are various `git add` options like:
+
+- `git add .` : Add all new and modified files to the staging area.
+- `git add -A` : Stage all changes (additions, modifications, deletions).
+- `git add <file>` : Add a specific file to the staging area.
+- `git add <directory>` : Add all files under a specific directory.
+
+Even thougt it seems that you will save everything everytime you change something, this is definitively not the case! Think about files containing sensitive information like passwords, keys, personal data, etc. Furthermore, you don't want to save information about your virtual environments, or special configurations like .vscode folders that are created automatically by VSCode to save your preferences.
+
+> Note: There is an alternative solution to not staging this changes that we will discuss in [section 3](../03_git_branches/). 
+
+## Removing Files from Staging Area
+
+The first option would be to use the `git rm` command. 
+> &#x26a0;&#xfe0f; Note that not only does it removes files from the staging area, but also deletes them from your **working directory** . 
+
+There are different `git rm` options like:
+
+- `git rm <file>` : Remove a specific file.
+- `git rm -r <directory>` : Remove a directory and its contents.
+
+Even though this command is particularly useful for removing files that we created as small tests before a final version and we accidentally stages, it still seems a little bit overkill for most common scenarios. 
+
+You may wonder "Can I remove something from stage without deleiting it from my workspace?" The answer: Yes, there is an alternative! If you want to remove a file from the staging area (unstage it) but not delete it from your working directory, you can use
+
+- `git reset <file>` : it will remove the file from the staging area, leaving it in your working directory. 
+- `git reset --hard` : this will discard changes in your working directory and index, reverting to the last commit.
+
+
+> &#x26a0;&#xfe0f; Careful when using the `--hard` flag, since it will delete _all your current changes_.
+
+
+# Taking Snapshots 📸
+
+The essence of Git is taking snapshots of your project **at meaningful intervals** —[section 4](04_writing_good_commit_messages.md) contains the details refering to these and other best practises. 
+
+Enough talking about "snapshots", the technical appropriate word for these is commits. A commit consists on saving all staged changes at once under a descriptive message. Staged changes are not recorded yet by Git, they just live on a special place until they go into a commit. It is this action that makes the changes go into the history, so the `git commit` command is the most basic saving operation Git has. 
+
+Mastering the art and science of committing changes, understanding the significance of each snapshot, and familiarizing yourself with good commit habits are quintessencial to building a robust project history. And this is of upmost importance since these will become your navigation logs of the project’s timeline. 🛤️
+
+## Exploring `git commit`  🧐
+
+Now that you've been introduced to the concept of commits as snapshots in your project's timeline, let’s unearth more secrets of the `git commit` command, ensuring each commit is meaningful and reflective of your progress —see [section 4](04_writing_good_commit_messages.md) for crafting impeccable commit messages.
+
+As we have seen, Git allows you to selectively add changes to a commit, ensuring each snapshot is purposeful and manageable. 
+
+- `git commit -m "Your commit message goes here"`
+
+### Amending Commits ✒️
+
+Mistakes happen! With Git, you can amend your last commit with the `--amend` flag. This will  let you correct the commit message or add forgotten changes, ensuring your history remains clean.
+
+- `git commit --amend`
+
+## `git log` : exploring its historical layers with Git
+
+The `git log` command is a powerful tool that unveils the log of commits, helping you trace the evolution of your codebase. It allows you yo navigate through the history of your project effortlessly.
+
+- `git log --oneline` : Get a concise view of commits.
+- `git log --graph` : Visualize the commit tree.
+- `git log -p` : See the patch introduced by each commit.
+
+Filtering the history:
+
+- `git log --since`, `git log --until` : Filter commits based on date.
+- `git log --author` : Filter commits by author.
+
+Tracing changes to specific files:
+
+- `git log <filename>` : View the commit history for a specific file.
+- `git log -- <filename>` : Trace changes to a particular file over time.
+
+
+
+# Creating and Switching to Branches 🌳
+
+In this section we step into the universe of branches where you create multiple paths for diverse tasks and jump between them seamlessly. We will visit the most fundamental commands, and unravel the methods to smoothly navigate through different branches of your project.
+
+## A prelude: understanding the HEAD 🤯
+
+In the realm of Git, the term HEAD holds significant weight. Let's demystify what HEAD is, understand its role, and learn how to use it efficiently.
+
+### What is HEAD?
+
+In Git, HEAD is a reference to the current snapshot in your working directory. It is used internally by Git to know which commit your working directory is currently on. It's like a bookmark, pointing to the branch and commit that you're currently working on. When you switch branches, the HEAD revision changes to the latest commit on the new branch.
+
+HEAD assists you in navigating through the history of your project. When you make a new commit, HEAD is updated to that new commit.
+
+### How to Use HEAD?
+
+You often encounter HEAD when you want to move to previous commits without switching branches, but this subject is kind of hard to understand only by reading text, so here you have two videos for you to understand HEAD a bit better.
+
+.............
+
+
+
+
+## `git branch` : laying down a new path 🛤️
+
+The `git branch` command is your ticket to creating new branches where you can work on different tasks simultaneously without a hiccup. But it does even more, it is the basis for any operation that you want to perform, from checking information on the branches, to renaming, do deleting.
+
+- `git branch` : it will list all of the branches in your repository.
+- `git branch -r` : list all the remote branches.
+- `git branch -a` : list both remote-tracking branches and local branches.
+- `git branch <branch_name>` : create a new branch named `<branch_name>`.
+- `git branch -d <branch_name>` : delete the specified local branch. Use `-D` to force delete unmerged branches.
+- `git branch -m <old_name> <new_name>` : rename a branch from `<old_name>` to `<new_name>`.
+- `git branch -u <upstream_branch>` : set an upstream branch for the current branch.
+- `git branch --show-current` : show the name of the current branch.
+
+## `git checkout` : hopping onto a new branch 🏃‍♂️
+
+The `git checkout` command is your reference point to switching, but also creating, between branches.
+
+- `git checkout <branch>` : switch to the specified branch and update the working directory.
+- `git checkout -b <new_branch>` : create a new branch and switch to it.
+- `git checkout -b <new_branch> <start_point>` : create a new branch, based on `<start_point>`, and switch to it.
+- `git checkout -- <file>` : discard changes in your working directory to the specified `<file>`.
+- `git checkout <commit>` : switch to a specific commit, detaching the HEAD.
+- `git checkout -` : switch to the branch last checked out.
+- `git checkout --orphan <new_branch>` : create a new branch, with no commit history, and switch to it.
+
+
+# Synchronizing Changes: Pushing and Pulling from Remote (`git push`, `git pull`) 🔄
+
+
+When working with Git in a collaborative environment, you'll often need to synchronize your work with a remote repository. This can happen, for example, whenever some colleague makes some changes to a branch in which you are working in. This is where `git push` and `git pull` come into play, acting as the conduits for remote collaboration. In this section, we'll explore these commands and how they enable you to share your contributions and stay up-to-date with others'.
+## `git push`: Sharing Your Contributions 📤
+
+`git push` updates the remote repository with your local commits. It is the command that sends your latest changes to the remote server, allowing your team to see the progress you've made.
+
+
+Here are some common usages of the git push command:
+
+- `git push origin <branch>`: Pushes your specified branch to the remote named origin.
+- `git push --all`: Pushes all your local branches to the corresponding remote branches.
+- `git push origin --delete <branch>`: Deletes a remote branch.
+- `git push --tags`: Pushes your tags to the remote repository.
+
+## `git pull`: Receiving Updates 📥
+
+Conversely, `git pull` fetches changes from the remote repository and merges them into your local branch. It keeps you in sync with the collective progress of your team's project.
+
+
+Here’s how you can use the git pull command effectively:
+
+- `git pull origin <branch>`: Fetches the specified branch from the remote named origin and merges it into your current branch.
+- `git pull --rebase`: Fetches changes and rebases your local changes on top of the retrieved commits.
+- `git pull --no-commit`: Fetches the changes but does not create a merge commit.
