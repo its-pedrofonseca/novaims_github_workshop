@@ -9,7 +9,6 @@ But wait, there's more! It can spot the differences between these snapshots. So 
 And if you're wondering why Git and not any other similar system, the reasons are: it's fast, it's secure, it's flexible, and... free! 
 The only downside is that it can be a bit hard to learn and that is why we are here. 
 
-We encourage you to read more about the main reasons why Git is so successful [in here](https://www.atlassian.com/git/tutorials/what-is-git).
 
 
 # If that is Git, then what is GitHub?
@@ -26,12 +25,7 @@ All in all, GitHub is more than just a storage space; it's a comprehensive toolk
 
 In case you are looking for something more inspirational, let Github tell you what Github is.
 
-
-<img src="../images/pBy1zgt0XPchd.jpg" alt="WindowsVenv" width="300" height="auto">
-
 [Link to video](https://www.youtube.com/watch?v=pBy1zgt0XPc)
-
-## What is Version Control?
 
 
 
