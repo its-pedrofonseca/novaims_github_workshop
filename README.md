@@ -1,10 +1,5 @@
 # NOVA-IMS Github Workshop
 
-On this workshop several themes are aborded, such as ...
-
-## What is git?
-
-## What is github?
-
-## WHat is Version Control?
-
+The readme.md file is incomplete, make sure to complete it before commiting and pushing the changes.
+## Update this part here with your thoughts of github:
+- 

@@ -1,0 +1,47 @@
+# Taking Snapshots 📸
+
+The essence of Git is taking snapshots of your project **at meaningful intervals** . 
+
+Enough talking about "snapshots", the technical appropriate word for these is commits. 
+A commit consists on saving all staged changes at once under a descriptive message. 
+Staged changes are not recorded yet by Git, they just live on a special place until they go into a commit. 
+It is this action that makes the changes go into the history, so the `git commit` command is the most basic saving operation Git has. 
+
+Mastering the art and science of committing changes, understanding the significance of each snapshot, and familiarizing yourself with good commit habits are quintessencial to building a robust project history. 
+And this is of upmost importance since these will become your navigation logs of the project’s timeline. 🛤️
+
+
+## Exploring `git commit`  🧐
+
+Now that you've been introduced to the concept of commits as snapshots in your project's timeline, let’s unearth more secrets of the `git commit` command for crafting impeccable commit messages.
+
+As we have seen, Git allows you to selectively add changes to a commit, ensuring each snapshot is purposeful and manageable. 
+
+- `git commit -m "Your commit message goes here"`
+
+And that's it, that's how you make a commit. Simple, right?
+
+## Amending Commits ✒️
+
+Mistakes happen! With Git, you can amend your last commit with the `--amend` flag. This will  let you correct the commit message or add forgotten changes, ensuring your history remains clean.
+
+- `git commit --amend`
+
+
+## `git log` : exploring its historical layers with Git
+
+The `git log` command is a powerful tool that unveils the log of commits, helping you trace the evolution of your codebase. It allows you yo navigate through the history of your project effortlessly.
+
+- `git log --oneline` : Get a concise view of commits.
+- `git log --graph` : Visualize the commit tree.
+- `git log -p` : See the patch introduced by each commit.
+
+Filtering the history:
+
+- `git log --since`, `git log --until` : Filter commits based on date.
+- `git log --author` : Filter commits by author.
+
+Tracing changes to specific files:
+
+- `git log <filename>` : View the commit history for a specific file.
+- `git log -- <filename>` : Trace changes to a particular file over time.
