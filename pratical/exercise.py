@@ -20,7 +20,7 @@ and running in the terminal at each step with the command (python/python3 pratic
 Make sure you are in the right place, you should be inside the repository in the directory:
 ( ../novaims_github_workshop )
 
-In the end you should have no breakpoint() functions!
+In the end you should have no breakpoint() functions!!
 """
 
 ### Install required packages ###
