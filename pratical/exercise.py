@@ -15,12 +15,12 @@ Oh no! This code is full of breakpoints and therefore we cannot run it end to en
 If you don't know what breakpoints are, it is like the pause button on your remote, and the code
 won't run unless you intruct it - however it is great for debbugging.
 
-In this pratical exercise your main objetive is to remove the breakpoint() sequencially
+In this pratical exercise your main objetive is to remove the  sequencially
 and running in the terminal at each step with the command (python/python3 pratical/exercise.py).
 Make sure you are in the right place, you should be inside the repository in the directory:
 ( ../novaims_github_workshop )
 
-In the end you should have no breakpoint() functions!!
+In the end you should have no  functions!!
 """
 
 ### Install required packages ###
@@ -69,7 +69,6 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
-breakpoint()
 
 # Scatter plot: Budget vs Revenue
 plt.figure(figsize=(6,4))
@@ -81,7 +80,6 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
-breakpoint()
 
 # Select relevant features
 features = ['budget', 'popularity']
@@ -103,7 +101,7 @@ model = RandomForestRegressor(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 print("Model trained!")
 
-breakpoint()
+
 
 # Feature importances
 print("\nFeature Importances:")
@@ -122,7 +120,7 @@ sample_title = df.loc[sample_index, 'title']
 sample_df = pd.DataFrame([sample_features])
 predicted_revenue = model.predict(sample_df)[0]
 
-breakpoint()
+
 
 # Show result
 print(f"\nMovie: {sample_title}")
