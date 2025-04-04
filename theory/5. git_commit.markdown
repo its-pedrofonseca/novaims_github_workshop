@@ -2,13 +2,11 @@
 
 The essence of Git is taking snapshots of your project **at meaningful intervals** . 
 
-Enough talking about "snapshots", the technical appropriate word for these is commits. 
 A commit consists on saving all staged changes at once under a descriptive message. 
-Staged changes are not recorded yet by Git, they just live on a special place until they go into a commit. 
-It is this action that makes the changes go into the history, so the `git commit` command is the most basic saving operation Git has. 
 
-Mastering the art and science of committing changes, understanding the significance of each snapshot, and familiarizing yourself with good commit habits are quintessencial to building a robust project history. 
-And this is of upmost importance since these will become your navigation logs of the project’s timeline. 🛤️
+Staged changes are not recorded yet by Git, they just live on a special place until they go into a commit.
+
+It is this action that makes the changes go into the history, so the `git commit` command is the most basic saving operation Git has. 
 
 
 ## Exploring `git commit`  🧐

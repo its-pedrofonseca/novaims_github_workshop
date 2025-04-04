@@ -6,17 +6,15 @@ So you've got your code on GitHub. Nice. But what if your code could _test_ itse
 Well, welcome to the world of **GitHub Actions**, where your repo becomes a little robot buddy that handles boring tasks for you. 🤖💪
 
 GitHub Actions is an **automation tool** built into GitHub. You can set up **workflows** that run whenever something happens in your repo – like a push, pull request, or even a new issue.  
-These workflows are written in YAML (don't worry, we'll guide you through it) and can do **pretty much anything**: testing code, building apps, deploying websites, sending notifications, and more.
+These workflows are written in YAML and can do **pretty much anything**: testing code, building apps, deploying websites, sending notifications, and more.
 
 ## Key Concepts
 
-Let’s break it down real quick:
+Let’s break it down real quick into some of the key concepts:
 
 - **Workflow**: The big picture. A YAML file that tells GitHub what to do and when.
 - **Trigger (on:)**: The event that kicks things off. Examples: `push`, `pull_request`, `schedule`, or even `workflow_dispatch` (manual runs).
 - **Jobs**: Sections inside a workflow that run steps. Think of them as different tasks (e.g., test, build, deploy).
-- **Steps**: Actual commands or actions that run in a job.
-- **Actions**: Reusable pieces of code written by the community or GitHub. You can use thousands of these for free!
 
 
 ## Popular Use Cases

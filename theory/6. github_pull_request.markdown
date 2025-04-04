@@ -59,7 +59,3 @@ A typical PR contains:
 - 📸 Use screenshots or gifs if your change involves UI.
 - 🔗 Link related issues using `Fixes #123` or `Closes #45`.
 - 👋 Be kind and constructive in comments — PRs are a learning tool, not just a checklist.
-
-![Merge Options](../images/merge-options.png)
-
-<sub>_Once approved, you can choose how to merge — a simple merge, squash, or rebase._</sub>
