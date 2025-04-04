@@ -28,15 +28,3 @@ Let’s say you have a folder with a simple site—`index.html`, maybe some CSS 
 
 And you’re published!
 
-## Got a Custom Domain? No Problem.
-
-GitHub Pages also supports custom domains (like `mycoolsite.com`). Just:
-
-1. Add a `CNAME` file to your repo with your domain name inside.
-2. Point your domain’s DNS settings to GitHub’s servers.
-3. Done. GitHub even supports HTTPS for free 🔐
-
-And ou can automate your site deployment using GitHub Actions!
-
-
-![Github Pages](images/github_pages.png)
