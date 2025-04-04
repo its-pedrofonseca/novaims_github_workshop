@@ -37,3 +37,6 @@ GitHub Pages also supports custom domains (like `mycoolsite.com`). Just:
 3. Done. GitHub even supports HTTPS for free 🔐
 
 And ou can automate your site deployment using GitHub Actions!
+
+
+![Github Pages](images/github_pages.png)

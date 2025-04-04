@@ -21,26 +21,11 @@ Adding collaborators is a straightforward process:
 
 ## Setting Branch Permissions: Safeguarding Your Code 🔐
 
-Branch permissions are critical for protecting important branches like `main` or `develop`. By restricting who can push or merge into these branches, you ensure that changes are reviewed and meet your project's standards.
+Branch permissions are critical for protecting important branches like `main` or `dev`. By restricting who can push or merge into these branches, you ensure that changes are reviewed and meet your project's standards.
 Steps to Set Branch Permissions:
 
 - Go to the repository settings.
 - Locate the "Branches" section.
 - Define branch protection rules, including who can push or merge, required status checks, and required reviews.
 
-## Best Practices for Team Management and Security 🏆
-
-Effective team management goes beyond just adding users. It involves:
-
-- Regularly reviewing who has access to your repository.
-- Limiting write access to minimize the risk of accidental or malicious changes.
-- Using pull requests to review code changes, regardless of a contributor's permissions.
-
-## Automating Permissions with Teams and Bots 🤖
-
-For larger projects or organizations, manually managing individual permissions can become unwieldy. You can use teams for group permissions and integrate bots for automated workflows.
-
-- Create teams within your organization for easier permission management.
-- Assign teams to repositories rather than individual users.
-- Use bots for automated checks and balances in the workflow.
 

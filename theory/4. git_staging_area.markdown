@@ -17,6 +17,7 @@ There are various `git add` options like:
 
 - `git add .` : Add all new and modified files to the staging area.
 - `git add -A` : Stage all changes (additions, modifications, deletions).
+- `git add -all` : Stage all changes (additions, modifications, deletions).
 - `git add <file>` : Add a specific file to the staging area.
 - `git add <directory>` : Add all files under a specific directory.
 
@@ -24,8 +25,7 @@ Even thougt it seems that you will save everything everytime you change somethin
 Think about files containing sensitive information like passwords, keys, personal data, etc. 
 Furthermore, you don't want to save information about your virtual environments, or special configurations like .vscode folders that are created automatically by VSCode to save your preferences.
 
-> Note: There is an alternative solution to not staging this changes that we will discuss in [section 3](../03_git_branches/). 
-
+![Git Add](images/git_add.png)
 
 ## Removing Files from Staging Area
 
@@ -56,3 +56,5 @@ In VSCode you will get used to the nomenclature **stage** and **unstage**. It is
 In fact, one click is enough. Going to the source control panel on the left, you will find that these two operations appear with a + and - symbol respectively.
 
 Furthermore, it also allows to check the difference of your code with the already commited version by just clicking on the file.
+
+![VSCode](images/vscode.png)
