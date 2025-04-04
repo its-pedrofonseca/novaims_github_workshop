@@ -28,3 +28,6 @@ Here’s how you can use the git pull command effectively:
 - `git pull origin <branch>`: Fetches the specified branch from the remote named origin and merges it into your current branch.
 - `git pull --rebase`: Fetches changes and rebases your local changes on top of the retrieved commits.
 - `git pull --no-commit`: Fetches the changes but does not create a merge commit.
+
+
+![Git Push and Pull](images/pushpull.png)

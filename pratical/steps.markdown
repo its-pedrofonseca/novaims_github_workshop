@@ -2,18 +2,28 @@
 
 Open the terminal on your code editor and make sure you have git installed.
 You can check it by running the command:
-git --version
+`git --version`
 
-
-# Initial configuration
 Run the command
-git config --list
+`git config --list`
+
+You probably going to be stuck in the terminal with ":    "
+Just press 'q'.
 
 Depending on the settings you have, check if you have the user.name and user.email configured.
 If not, run the following commands:
 
 `git config --global user.name "<your_name>"`
-`git config --global user.email "<your_email>"`
+`git config --global user.email "<your_email_synced_to_git>"`
+
+
+## Initial configuration
+
+Then you can open a new window on your code editor, and select the pane for cloning a git repository
+or you can run the command `git clone https://github.com/its-pedrofonseca/novaims_github_workshop.git`
+
+On your terminal, just make sure you select a proper directory to store the code locally.
+If any questions arise during this step call the instructor!
 
 
 ### 1st step:
@@ -105,7 +115,7 @@ Remove the lines that have:
 `breakpoint()`
 
 
-And execute the code again by running the command:
+Extra points for using shortcuts! And execute the code again by running the command:
 
 `python pratical/exercise.py`
 
@@ -158,7 +168,9 @@ To check the log of the repository workflow, you can try to run the command:
 or try these, whatever you like the most:
 
 `git log --oneline` : Get a concise view of commits.
+
 `git log --graph` : Visualize the commit tree.
+
 `git log -p` : See the patch introduced by each commit.
 
 

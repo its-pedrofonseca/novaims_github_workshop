@@ -19,6 +19,8 @@ As we have seen, Git allows you to selectively add changes to a commit, ensuring
 
 - `git commit -m "Your commit message goes here"`
 
+![git commit image](images/git_commit.png)
+
 And that's it, that's how you make a commit. Simple, right?
 
 ## Amending Commits ✒️
@@ -45,3 +47,8 @@ Tracing changes to specific files:
 
 - `git log <filename>` : View the commit history for a specific file.
 - `git log -- <filename>` : Trace changes to a particular file over time.
+
+
+High level example of `git log --graph`
+
+![git log image](images/git_log.png)

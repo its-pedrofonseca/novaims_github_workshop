@@ -4,29 +4,50 @@
 
 So, you might have heard the term Git thrown around or else you are wondering why are you learning this on the first place, so what is it? 🤔 
 
-Git is what we call a _version control system_. Huh? Yes, fancy words... Think of it like a time machine 🕰️ for your code. 
-It allows you to snap 'pictures' (or save states) of your code at various stages of your project. And here's the kicker – _you can hop back and forth between these snapshots anytime you want!_. 
+- Git is _version control system_. Huh? Yes, fancy words... 
+
+Think of it like a time machine 🕰️ for your code. 
+
+
+- It allows you to snap 'pictures' of your code. 
+- _you can hop back and forth between these snapshots anytime you want!_.
+
 Spilled coffee on your keyboard and accidentally deleted half your code? No worries! Git's got your back. 🙌
 
-But wait, there's more! It can spot the differences between these snapshots. So imagine a team of coders, each working from the same starting point, tweaking different parts of the code. 
-Git helps weave these different changes together, ensuring they fit perfectly. Best of all? 
+But wait, there's more! 
+- It can spot the differences between these snapshots.
+
+![Git](images/git3.png)
+
+
+So imagine a team of coders, each working from the same starting point, tweaking different parts of the code. 
+Git helps weave these different changes together, ensuring they fit perfectly. 
+Best of all? 
 You control this process the entire time, deciding what to keep, what to delete or even how to combine these changes.
 
-And if you're wondering why Git and not any other similar system, the reasons are: it's fast, it's secure, it's flexible, and... free! 
+And if you're wondering why Git and not any other similar system, the reasons are: 
+- it's fast; 
+- it's secure; 
+- it's flexible, 
+- it's free! 
+
 The only downside is that it can be a bit hard to learn and that is why we are here. 
 
 
 ## If that is Git, then what is GitHub?
 
-Think of GitHub as a meeting point for coders. It's a platform that uses Git at its core, but it offers a space to store and share those code 'snapshots' we talked about. **This repo is on Github, of course!**
+Think of GitHub as a meeting point for coders, offering a space to store and share those code 'snapshots' we talked about.
 
-One of its standout features? Collaboration tools. On GitHub, you can suggest changes, review code, and track issues. 
-This makes working together smoother and more transparent. But it also allows for managing user permissions.
+ **This repo is on Github, of course!**
 
-But there's more. Github has automation tools, and with them you can set up workflows for Continuous Integration (CI) —_a. k. a._ testing your code automatically— and Continuous Deployment (CD)—automatically making your code available once it is ready.
-No more manual checks or repetitive tasks!
+One of its standout features? 
+- Collaboration tools. You can suggest changes, review code, and track issues;
+- Makes working together smoother and more transparent;
+- Allows for managing user permissions;
+- Github automation tools (which we will talk later)
 
-And to add an extra layer of security to your projects, GitHub allows for encrypted variables that you can use in your workflows, ensuring sensitive information like API keys stay hidden and safe.
+<img src="images/git.png" alt="GitHub" width="300"/>
+
 
 All in all, GitHub is more than just a storage space; it's a comprehensive toolkit for modern developers. 
 
@@ -37,12 +58,9 @@ In case you are looking for something more inspirational, let Github tell you wh
 
 ## VSCode
 
-In this Workshop, we will teach you how to run Git from the terminal, but it would almost be a crime not to give you alternatives using VSCode. 
+In this Workshop, we will teach you how to run Git from the terminal. 
 Even though working in the terminal is more than enough, VSCode has Git and Github integrations that will make your life easier.
 
 Not only does it come with some basic functionalities by default, but there are several VSCode extensions that will take your Git capabilities to another level.
 
-<img src="../images/Guva-oab1pghd.jpg" alt="WindowsVenv" width="300" height="auto">
-
-[Link to video](https://www.youtube.com/watch?v=Guva-oab1pg): You don't have to watch the whole thing, but we highly recommend checking out **Gitlens** and **Git Graph**.
-
+![alt text](images/gitvscode.png)

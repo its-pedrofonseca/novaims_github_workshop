@@ -26,3 +26,7 @@ Let’s break it down real quick:
 - 🔀 Schedule nightly builds or data fetches (with `schedule`)
 - 🧹 Lint and format code automatically
 - 🗂️ Label issues and PRs automatically with bots
+
+Example:
+
+<img src="images/github_actions.png" alt="Github actions" width="800"/>
